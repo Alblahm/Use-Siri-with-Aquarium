@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Control de Acuario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=0.90, user-scalable=yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="apple-touch-icon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-2.0.0.js"></script>
+    <script type="text/javascript" src="ControlYunJQuery.js"></script>
+  </head>
+  <body onload="checkAll()">
+
+<br>
+
+ <table class="extraTable">
+  <tr>
+  <th style="text-align:right"><a href="javascript:doNot()"> <img name="tagReload" src="Boton_Reload.jpg" alt="Reload" width="35px"></a></th>
+  <th style="text-align:left"><h3>Salidas digitales del arduino Yun ... </h3></th>
+  <th style="text-align:right"><img name="tagInfo" src="info.jpg" alt="Info" width="35px"></th>
+  </tr>
+ </table>
+
+ <table>
+  <tr>
+    <th>In/Out 00 </th>
+    <th>In/Out 01 </th>
+    <th>In/Out 02 </th>
+    <th>In/Out 03 </th>
+    <th>In/Out 04 </th>
+  </tr>
+  <tr>
+    <td><a href="javascript:doNot();"> <img name="tagIO_00" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_01" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_02" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_03" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_04" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+  </tr>
+  <tr>
+    <th>In/Out 05 </th>
+    <th>In/Out 06 </th>
+    <th>In/Out 07 </th>
+    <th>In/Out 08 </th>
+    <th>In/Out 09 </th>
+  </tr>
+  <tr>
+    <td><a href="javascript:doNot();"> <img name="tagIO_05" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_06" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_07" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_08" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_09" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+  </tr>
+  <tr>
+    <th>In/Out 10 </th>
+    <th>In/Out 11 </th>
+    <th>In/Out 12 </th>
+    <th>In/Out 13 </th>
+    <th>A0-Out 18 </th>
+  </tr>
+  <tr>
+    <td><a href="javascript:doNot();"> <img name="tagIO_10" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_11" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_12" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>	
+    <td><a href="javascript:doNot();"> <img name="tagIO_13" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_18" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+  </tr>
+  <tr>
+    <th>A1-Out 19 </th>
+    <th>A2-Out 20 </th>
+    <th>A3-Out 21 </th>
+    <th>A4-Out 22 </th>
+    <th>A5-Out 23 </th>
+  </tr>
+  <tr>
+    <td><a href="javascript:doNot();"> <img name="tagIO_19" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_20" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_21" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>	
+    <td><a href="javascript:doNot();"> <img name="tagIO_22" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_23" src="Botton_Broken.jpg" alt="ON" width="100px"> </a> </td>
+  </tr>
+ </table>
+
+ <table class="extraTable">
+  <tr>
+  <th style="text-align:right"><a id="aLog" href="javascript:doNot();"> <img name="tagLogIm" src="Botton_Broken_O.jpg" alt="OFF" width="35px"> </a> </th>
+  <th style="text-align:left"><h3><a href="../SketchData.log">Archivo de log</a>.</h3></th>
+  <th style="width:20%"> </th>
+  <th style="text-align:right"><h3>Menu principal</h3></th>
+  <th style="text-align:left"><a href="../"> <img name="retImg" src="back-button.jpg" alt="Back" width="40px"></a></th>
+  </tr>
+ </table>
+
+  </body>
+</html>
+
+
+
+<!--		
+
+
+
+
+-->
+
+
+
+
+

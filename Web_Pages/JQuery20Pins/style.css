@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+#placeholder { 
+	width: 300px; height: 200px; 
+}
+
+table{
+    width:100%;
+    border: 5px groove blue;
+	padding: 5px;
+    /* border-collapse: collapse;  */
+}
+
+.extraTable{
+    border: 0px;
+    padding: 5px;
+    /* border-collapse: collapse;  */
+}
+
+th{
+    padding: 0px 5px 0px 5px; /* top right bottom left */
+    text-align: center;
+}
+
+td{
+    padding: 0px 5px 0px 5px; /* top right bottom left */
+    /* text-align: center; */
+}
