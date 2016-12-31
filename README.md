@@ -1,6 +1,6 @@
-*Read this in other languages: [English](README.en.md) <a href="https://github.com/Alblahm/Voice-Controled-Acuarium/wiki"><img src="https://github.com/Alblahm/Voice-Controled-Acuarium/blob/master/img/Flag_of_Spain.png" align="left" hspace="10" vspace="6" width="30px"></a>, [Español](README.es.md) <a href="https://github.com/Alblahm/Voice-Controled-Acuarium/wiki"><img src="https://github.com/Alblahm/Voice-Controled-Acuarium/blob/master/img/Flag_of_Union.png" align="left" hspace="10" vspace="6" width="30px"></a>.
+<a href="https://github.com/Alblahm/Voice-Controled-Acuarium/wiki"><img src="https://github.com/Alblahm/Voice-Controled-Acuarium/blob/master/img/Flag_of_Spain.png" align="right" hspace="2" vspace="0" width="30px"></a> <a href="https://github.com/Alblahm/Voice-Controled-Acuarium/wiki"><img src="https://github.com/Alblahm/Voice-Controled-Acuarium/blob/master/img/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="30px"></a>.
 
-
+*Read this in other languages: [English](README.en.md), [Español](README.es.md).
 
 
 # Voice-Controled-Acuarium
