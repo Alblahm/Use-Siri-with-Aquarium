@@ -1,42 +1,24 @@
-
-
 # min hour day month dayofweek command
-# 2-59/4 * * * * wget http://192.168.1.10/arduino/digital/12/1
-# 0-58/4 * * * * wget http://192.168.1.10/arduino/digital/12/0
-# Se encienden las luces y el filtro a las 9h
-0 9 * * * wget http://192.168.1.10/arduino/digital/8/1
-1 9 * * * wget http://192.168.1.10/arduino/digital/9/1
-2 9 * * * wget http://192.168.1.10/arduino/digital/10/1
-# Se apagan las luces y el filtro a las 21h
-0 21 * * * wget http://192.168.1.10/arduino/digital/8/0
-1 21 * * * wget http://192.168.1.10/arduino/digital/9/0
-2 21 * * * wget http://192.168.1.10/arduino/digital/10/0
+# Se encienden las luces, el filtro y la Wifi a las 8:30h
+30 8 * * * 'date' >>/root/logAcuario.txt
+31 8 * * * wget -q 'http://localhost/arduino/print/Activando/Acuario' -O - >>/root/logAcuario.txt
+32 8 * * * wget -q 'http://localhost/arduino/digital/9/1' -O - >>/root/logAcuario.txt
+33 8 * * * wget -q 'http://localhost/arduino/digital/8/1' -O - >>/root/logAcuario.txt
+34 8 * * * wget -q 'http://localhost/arduino/digital/10/1' -O - >>/root/logAcuario.txt
+35 8 * * * wget -q 'http://localhost/arduino/wifi/1' -O - >>/root/logAcuario.txt
+# Se apaga el filtro para comer (de 14:30 a 16:00)
+30 14 * * * wget -q 'http://localhost/arduino/print/Apagando-Filtro/Para-Comer' -O - >>/root/logAcuario.txt
+31 14 * * * wget -q 'http://localhost/arduino/digital/10/0' -O - >>/root/logAcuario.txt
+02 16 * * * wget -q 'http://localhost/arduino/digital/10/1' -O - >>/root/logAcuario.txt
+# Se apaga el filtro para comer (de 19:30 a 20:00)
+30 19 * * * wget -q 'http://localhost/arduino/print/Apagando-Filtro/Para-Comer' -O - >>/root/logAcuario.txt
+31 19 * * * wget -q 'http://localhost/arduino/digital/10/0' -O - >>/root/logAcuario.txt
+02 20 * * * wget -q 'http://localhost/arduino/digital/10/1' -O - >>/root/logAcuario.txt
+# Se apaga el filtro a las 22:00, las luces y la Wifi a las 23:00
+00 22 * * * wget -q 'http://localhost/arduino/print/Desactivando/Acuario' -O - >>/root/logAcuario.txt
+01 22 * * * wget -q 'http://localhost/arduino/digital/8/0' -O - >>/root/logAcuario.txt
+02 22 * * * wget -q 'http://localhost/arduino/digital/10/0' -O - >>/root/logAcuario.txt
+03 23 * * * wget -q 'http://localhost/arduino/digital/9/0' -O - >>/root/logAcuario.txt
+04 23 * * * wget -q 'http://localhost/arduino/wifi/0' -O - >>/root/logAcuario.txt
+05 23 * * * wget -q 'http://localhost/arduino/print/.../...' -O - >>/root/logAcuario.txt
 # Fin de archivo
-
-##
-# Actualización nuevas Tareas:
-# min hour day month dayofweek command
-# 2-59/4 * * * * wget -q 'http://192.168.1.10/arduino/digital/12/1'
-# 0-58/4 * * * * wget -q 'http://192.168.1.10/arduino/digital/12/0'
-#1-59/10 * * * * wget -q 'http://192.168.1.10/arduino/print/Apagando-Para-Comer' -O - >>/root/logAcuario.txt
-#1-59/10 * * * * wget -q 'http://192.168.1.4/jsonrpc?request={"jsonrpc":"2.0","method":"GUI.ShowNotification","params":{"title":"Aviso del Acuario","message":"Apagado del filtro durante la comida"},"id":1}' -O - >>/root/logAcuario.txt
-# Se encienden las luces y el filtro a las 9h
-0 9 * * * wget 'http://192.168.1.10/arduino/digital/8/1'
-1 9 * * * wget 'http://192.168.1.10/arduino/digital/9/1'
-2 9 * * * wget 'http://192.168.1.10/arduino/digital/10/1'
-# Se apaga el filtro durante la hora de comer (de 3 a 4)
-0 15 * * * wget -q 'http://192.168.1.10/arduino/print/Apagando-Para-Comer'
-1 15 * * * wget -q 'http://192.168.1.10/arduino/digital/10/0'
-0 16 * * * wget -q 'http://192.168.1.10/arduino/digital/10/1'
-# Se apagan las luces y el filtro a las 21h
-0 21 * * * wget -q 'http://192.168.1.10/arduino/digital/8/0'
-1 21 * * * wget -q 'http://192.168.1.10/arduino/digital/9/0'
-2 21 * * * wget -q 'http://192.168.1.10/arduino/digital/10/0'
-# Fin de archivo
-
-
-Tareas descartadas.
-
-# 2-59/4 * * * * wget -q 'http://192.168.1.10/arduino/digital/12/1' -O - >>/root/logAcuario.txt
-# 0-58/4 * * * * wget -q 'http://192.168.1.10/arduino/digital/12/0' -O - >>/root/logAcuario.txt
-#1-59/10 * * * * wget -q 'http://192.168.1.4/jsonrpc?request={"jsonrpc":"2.0","method":"GUI.ShowNotification","params":{"title":"Aviso del Acuario","message":"Apagado del filtro durante la comida"},"id":1}' -O - >>/root/logAcuario.txt
