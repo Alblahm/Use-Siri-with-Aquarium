@@ -9,6 +9,6 @@ A full feed and remote control acuarium. You can take the control of it, both vi
 
 
 ## Usefull links
-More info and images in the local [Wiki](https://github.com/Alblahm/Voice-Controled-Acuarium/wiki) Pages.
-
+Get more info in the local [Wiki](https://github.com/Alblahm/Voice-Controled-Acuarium/wiki) Pages.
+Más información en las páginas de la [Wiki](https://github.com/Alblahm/Voice-Controled-Acuarium/wiki).
 
