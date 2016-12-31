@@ -1,1 +1,71 @@
-pagina Web
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Control de Acuario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1;" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=0.90, user-scalable=yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="apple-touch-icon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-2.0.0.js"></script>
+    <script type="text/javascript" src="ControlYunJQuery.js"></script>
+  </head>
+  <body onload="checkAll()">
+
+  <table class="extraTable">
+    <tr>
+    <td style="text-align:right; width: 5%;"><img name="tagInfo" src="info.jpg" alt="Info" width="35px"></td>
+    <td class="titulo">Control de Acuario ...</td>
+    <td style="text-align:right"><a class="temp" href="../" alt="Volver"> <img name="retImg" src="back-button.jpg" alt="Back" width="35px"></a></td>
+    </tr>
+  </table>
+<hr/>
+  <div id="TablaConFondo">
+    <p class="comida">Comida repuesta:<br/><a class="comida" name="tagLastEat" href="../FoodTime.log">hace ? D&iacute;as</a></p>
+    <p class="temp">Temp Agua:<br/><a class="temp" name="tagTemp" href="../SketchData.log">??&deg;C</a></p>
+    <p class="meal"><a href="javascript:doNot();"><img name="tagMeal" src="Meal_Blue.png" alt="LLENO" width="40px"></a></p>
+    <p class="wifi"><a href="javascript:doNot();"><img name="tagWifi" src="Wifi_ON.gif" alt="ON" width="40px"></a></p>
+  </div>
+<hr/>
+  <table class="extraTable">
+   <tr>
+    <th>Luz Techo </th>
+    <th>Luz Suelo </th>
+    <th>Filtro    </th>
+    <th>Luz UV    </th>
+    <th><a href="../SketchData.log">TempLog</a></th>
+   </tr>
+   <tr>
+    <td><a href="javascript:doNot();"> <img name="tagIO_08" src="Botton_Broken.jpg" alt="ON" width="90px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_09" src="Botton_Broken.jpg" alt="ON" width="90px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_10" src="Botton_Broken.jpg" alt="ON" width="90px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagIO_13" src="Botton_Broken.jpg" alt="ON" width="90px"> </a> </td>
+    <td><a href="javascript:doNot();"> <img name="tagLogIm" src="Botton_Broken_O.jpg" alt="OFF" width="40px"> </a> </td>
+   </tr>
+  </table>
+<hr/>
+
+ </body>
+</html>
+
+
+
+<!--		
+
+ <div id="LuzTecho">
+   <img name="Light_Top" src="LuzEncendidaUD.gif" alt="ON" width="30px">
+ </div>
+
+ <div id="LuzSuelo">
+   <img name="Light_Bot" src="LuzEncendida.gif" alt="ON" width="30px">
+ </div>
+
+
+-->
+
+
+
+
+
