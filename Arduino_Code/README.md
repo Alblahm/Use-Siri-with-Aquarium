@@ -14,7 +14,7 @@ Both files include the commands to turn off and on the lights of the acuarium an
 pump to turn it off during night. It is also very healthy for the fishes (it resembles the natural environment), so the fishes will 
 survive longer.
 
-## Ardunio project file
+## Arduino project file
 To be able to control your arduino through rest services you only have to upload the ino file to your arduino. This can be accomplished
 by oppening the arduino IDE, load this ino file and upload it to your arduino YUN. The great advantage of the YUN is that you can make
 changes in the ino file and reload without connecting it directly to your computer. You only need that the YUN is connected to the same
