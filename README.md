@@ -1,5 +1,5 @@
-# Voice-Controled-Acuarium
-A full feed and remote control acuarium. You can take the control of it, both via web page interface or directly by using Siri voice commands.
+# Voice-Controled-Aquarium
+A full feed and remote control aquarium. You can take the control of it, both via web page interface or directly by using Siri voice commands.
 
 ## Select your Language
 
