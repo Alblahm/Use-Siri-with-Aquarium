@@ -5,7 +5,9 @@ by oppening the arduino IDE, load this ino file and upload it to your arduino YU
 changes in the ino file and reload without connecting it directly to your computer. You only need that the YUN is connected to the same
 wifi network of your computer.
 
-* The "Arduino.ino" file includes
+* The "Arduino.ino" file includes two definitions that allow you to use or not a LCD screen. You only have to enable or disable this define vars and compile.
+
+If you dont use the LCD connected to your Arduino then you have much more inputs free to connect to any other devices. 
 
 ## Crontab Tasks 
 This Crontab tasks can be added to your arduino Yun to manage all the program activities of your acuarium.
